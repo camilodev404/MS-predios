@@ -18,7 +18,7 @@ public class PredioController {
     PredioService predioService;
 
     @GetMapping("/all")
-    public ResponseEntity<List<Predio>> getPredios(){
+    public ResponseEntity<List<Predio>> getPredio(){
         return new ResponseEntity<>(predioService.getAll(), HttpStatus.OK);
     }
 
