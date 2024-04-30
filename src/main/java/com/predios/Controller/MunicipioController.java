@@ -2,6 +2,7 @@ package com.predios.Controller;
 
 import com.predios.Model.Municipio;
 import com.predios.Service.MunicipioService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/municipio")
 @CrossOrigin("*")
+@Tag(name = "Municipios")
 public class MunicipioController {
 
     @Autowired
